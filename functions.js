@@ -75,7 +75,7 @@ function fun(){
 fun();//hi
 
 //arrpow function
-const add=(num1.num2)=>{
+const add=(num1,num2) => {
     return num1+num2;
 }
 
@@ -84,7 +84,7 @@ const add=(num1.num2)=>{
 const square=(num)=>num*num;
 
 //argement
-const fn(){
+const fn= ()=> {
     console.log(argument);
 }//0k
 
