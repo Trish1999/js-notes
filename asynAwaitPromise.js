@@ -53,7 +53,31 @@ try{
     }
 };
 
-//promise polyfill
+//custom promise
+class CustomPromise {
+    constructor(executor) {
+        this.callback = null;
+
+        const resolve = (value) => {
+            if (this.callback) this.callback(value);
+        };
+
+        executor(resolve);
+    }
+
+    then(callback) {
+        this.callback = callback;
+    }
+}
+
+const customPromise = new CustomPromise((resolve) => {
+    setTimeout(() => resolve("Custom Promise resolved!"), 1000);
+});
+
+customPromise.then(console.log);
+
+//polyfill of promise
+
 
 
 
