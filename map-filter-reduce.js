@@ -1,5 +1,5 @@
 //map,filter and reduce are array method to iterate over an array and perform transformation and computation
-------------------------------------------MAP
+//------------------------------------------MAP
 const nums=[1,2,3,4];
 
 const multiplay=nums.map((num,i,arr)=>{
@@ -8,7 +8,7 @@ const multiplay=nums.map((num,i,arr)=>{
 
 console.log(multiplay);//[3,7,11,15]
 //map returns a new array
----------------------------------------- FILTER
+//---------------------------------------- FILTER
 const nums=[1,2,3,4];
 
 const moreThenTwo=nums.filter((num)=>{
@@ -17,7 +17,7 @@ const moreThenTwo=nums.filter((num)=>{
 
 console.log(moreThenTwo);//[3,4]
 //filters returns only those elements which fullfills the criteria
--------------------------------------------REDUCE
+//-------------------------------------------REDUCE
 const nums=[1,2,3,4];
 
 const sum = nums.reduce((acc,curr,i,arr)=>{
@@ -31,48 +31,7 @@ console.log(sum);//10
 //currentValue= current element
 
 //reduce method reduces an array of values down to just one value
-=--------------------------------------
-//customMap function(polyfill)
-
-Array.prototype.myMap=function(cb){
-    let temp=[];
-    for(let i=0;i<this.length;i++){
-        temp.push(cb(this[i],i,this));
-    }
-  return temp;
-}
-
-//const multiplay=nums.myMap(()=>---)
-
-------------------------------------------
-//customFilter function(polyfill)
-
-Array.prototype.myFilter=function(cb){
-    let temp=[];
-    for(let i=0;i<this.length;i++){
-        if(cb(this[i],i,this)){
-        temp.push(this[i]);
-        }
-    }
-  return temp;
-}
-
-//const moreThenTwo=nums.myFilter(()=>----)
-----------------------------------------------------
-//customReduce function(polyfill)
-
-Array.prototype.myReduce=function(cb,initiaValue){
-    var accumulator = initiaValue;
-
-for(let i=0;i<this.length;i++){
-    accumulator=accumulator ? cb(accumulator,this[i], i,this): this[i];
-}
-return accumulator;
-};
-
-//const sum = nums.myReduce((acc,curr,i,arr)=>---)
-
-----------------------------------------------
+//--------------------------------------
 
 let students=[
     {name:"minu"; rollNumber:10,marks:80},

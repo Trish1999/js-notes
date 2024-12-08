@@ -83,12 +83,13 @@ const add=(num1,num2) => {
 
 const square=(num)=>num*num;
 
-//argement
+//argument
 const fn= ()=> {
     console.log(argument);
 }//0k
 
 //you ca not have a argument keu word in arrow function
+
 
 
 

@@ -1,3 +1,4 @@
+//let-var-const:
 //var was introduced to js when it was created 
 //let and const introduced to js after ES6version come to market
 
@@ -42,12 +43,12 @@ test();
 
 var a;
 var a; //correct
--------------------------
+//-------------------------
 {
     let a;
     let a;//incorrect
 }
---------------------------
+//--------------------------
 let a;
 {
     let a;//correct
@@ -62,19 +63,7 @@ const a=5;//initialisation required
 const a=5;
 a =10;//error
 
-//during the creation phase javascript  moves your variables and functions to top of code is called hoisting
 
-console.log(count);//undefined        | var count
-var count=1;                          | console.log(count);
-                                      | count=1;
-
-//hoisted in temporal deadzone:(time between the declaration and initialization of let and const variable)
-
-console.log(count);//error        
-let count=1;
-
-console.log(count);//error        
-const count=1;
 
 
 

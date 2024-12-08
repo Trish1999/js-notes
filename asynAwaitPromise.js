@@ -76,7 +76,6 @@ const customPromise = new CustomPromise((resolve) => {
 
 customPromise.then(console.log);
 
-//polyfill of promise
 
 
 

@@ -87,26 +87,6 @@ var Module=(fuction(){
     };
 })();
 
-
-//Once polyfill
-function once(func,context){
-    let run;
-
-    return function(){
-        if(func){
-            ran=func.apply(context||this.arguments);
-            func=null;
-        }
-        return ran;
-    };
-}
- const hello=once(()=> console.log("hello"));//hello 
-
- hello();//its runs multiple time but due to once function it run only once 
- hello();
- hello();
- hello();
-
 //closure vs scope
 
  //scope defines what variable  you have access to 
