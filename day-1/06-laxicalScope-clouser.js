@@ -1,6 +1,7 @@
 //lexical scope:
 //a variable defined outside a function can be accessible inside another function after a variable declaration
-
+// If a function needs to access
+//a variable, it first goes to its local memory. When it does not find it there, it goes to the memory of its lexical parent.
 var name="minu";
 
 //global scope
@@ -15,6 +16,7 @@ local();
 
 //closures:
 //it gives you access to outer function's scope from an inner function.
+//means A closure can remember and access variables and arguments reference of its outer function even after the function has returned.
 
 function func(){
     var name="tri";
@@ -25,7 +27,17 @@ function func(){
 }
 func()(5);//tri 5
 
-//closure help in time optimization 
+//Advantages of Closure:
+//1.Module Design Pattern
+//2.Currying
+//2.Memoize
+//3.Data hiding and encapsulation
+//4.setTimeouts etc.
+
+//Disadvantages of Closure:
+//Over consumption of memory
+//Memory Leak, Freeze browser
+
 //closures have 3 scopes
 //1.local scopes
 //2.outer function scope
