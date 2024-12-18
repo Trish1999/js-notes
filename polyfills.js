@@ -1,4 +1,5 @@
-//polyfils are our own implementation of inbuilt function in javascript;
+//polyfils are our own implementation of inbuilt function in javascript to make older browsers understand our new code,it converts the new code into old code which browser can understand.
+
 const nums=[1,2,3,4];
 //--------------------------------------
 //Map function

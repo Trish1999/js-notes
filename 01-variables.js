@@ -19,6 +19,12 @@ let return = 5; // also can't name it "return", error!
 //When the name contains multiple words, camelCase is commonly used. That is: myVeryLongName
 // let also define multiple variables in this multiline style:
 
+//Variable conguration comprises of 3 phases
+//a) Declaration-----var a;
+//b) Assignment -----a=5;
+//c) Initialization------var a=5;
+
+
 let user = 'John',
   age = 25,
   message = 'Hello';

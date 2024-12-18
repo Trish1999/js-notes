@@ -1,4 +1,4 @@
-//objects are used to store keyed collection of various data and complex utilities
+// object is a collection of properties, where each property consists of a key-value pair.
 //an object can be created by using curly brakets
 
 const user={

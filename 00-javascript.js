@@ -37,5 +37,46 @@
 
 //3.eval execution context
 //any js code that gets executed within the eval function creates and holds its own execution context,howeverit is not used by developer.
+//----------------------------------------------------------------------------
+//JavaScript output Techniques
+
+//1. alert() ------alert("your message")
+//It can display output in a message box.
+// It will not allow to cancel
+
+//2. confirm()----ag = confirm("your message");
+//- It is similar to alert box but allows to cancel.
+//returns true on OK false on Cancel
+
+//3. document.write()----document.write("your message");
+//It can display output on new screen.
+
+//4. console methods [log(), warn(), error(), info(), debug()]
+//console.log("message")
+//console.error("message")
+//console.log("line1 \n line2")
+//We use these method to log the tracking messages.
 
 
+//5. innerText----document.querySelector("p").innerText = "some message";
+//It is an output technique used for containers that can display text
+
+//6. innerHTML-----document.querySelector("p").innerHTML = "msg | markup";
+//It is similar to innerText but allows markup.
+
+//7. outerHTML----document.querySelector("p").outerHTML = "msg | markup";
+//It removes the existing element and renders the current element.
+
+//-----------------------------------------------
+//JavaScript Input Techniques
+
+//a) prompt()----prompt("Message", "Default_Value");
+//It is an input box that allows user to input any string value.
+
+//b) Form input elements
+//You can use HTML form input elements like
+// textbox
+// checkbox
+// radio
+// listbox
+// textarea etc..
